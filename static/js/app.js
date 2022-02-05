@@ -1,4 +1,4 @@
-var columns = ['stock symbol','closing price','amount','121d avg','180d avg','diff7+']
+var columns = ['stock symbol','closing price','amount','120d avg','180d avg','diff7+']
 var table = d3.select('#base_table').append('table')
 var thead = table.append('thead')
 var tbody = table.append('tbody')
