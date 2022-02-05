@@ -1,0 +1,60 @@
+body { 
+  padding-top:60px;
+  margin:0;
+}
+
+table, th, thead, tbody, td {
+  border: 1px solid black;
+  border-collapse:collapse;
+
+}
+
+table{
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.navbar {
+        overflow: hidden;
+        background-color: #1c87c9;
+        position: fixed;
+        width: 100%;
+        top:0;
+        height:auto;
+      }
+
+.navbar a {
+        float: left;
+        display: block;
+        color: #eeeeee;
+        text-align: center;
+        padding: 15px 15px;
+        text-decoration: none;
+        font-size: 18px;
+      }
+
+.navbar a:hover {
+        color: blue;
+      }
+
+.popover__message {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  transform: translate(0, 10px);
+  background-color: #bfbfbf;
+  padding: 1.5rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  width: auto;
+  display:none;
+}
+
+.popover__title:hover + .popover__message {
+  display:block;
+  z-index: 0;
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0, -20px);
+  text-align:center;
+}
+
