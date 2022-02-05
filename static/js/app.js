@@ -21,7 +21,7 @@ var tabulate = function (data,columns) {
 }
 
 
-d3.csv('../img/creation.csv',data=> {
+d3.csv('./creation.csv',data=> {
   tabulate(data,columns);
   });
 
